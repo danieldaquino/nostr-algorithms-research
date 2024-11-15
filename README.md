@@ -1,5 +1,5 @@
 # nostr-algorithms-research
-A collection of research studies into algorithms for Nostr, including Web of Trust, and more.
+A collection of data-driven studies into algorithms for Nostr, including Web of Trust, and more.
 
 ## What is Nostr
 
@@ -17,17 +17,17 @@ This novel approach unlocks new opportunities and brings several benefits, inclu
 Being a new network, Nostr still faces certain challenges, including:
 1. **Sybil attacks and impersonation:** Creating new identities is as easy as generating a cryptographic keypair. Since there is no central authority to verify users.
 2. **Spam prevention:** Relay operators usually have measures to prevent spam, but since new identities are so easy to make, LLMs can be used to generate plausible content, and free relay operators usually have limited financial resources, this remains a challenge.
-3. **Content moderation:** Given that users can choose any relays they wish, they may experience varying degrees of content moderation quality, which may depend on the resources available to the relay operators and willingness to moderate — and also due to the partly subjective nature of what people want and don't want to see.
+3. **Content moderation and discovery:** Given that users can choose any relays they wish, they may experience varying degrees of content quality, which may depend on the resources available to the relay operators to moderate or curate. When it comes to content discovery, what people want and don't want to see is partly subjective to each user, so relay-level content moderation and recommendation alone may not be good enough.
 
-In centralized networks, these issues are resolved by a central authority in the system (i.e. the company that runs it). For a decentralized network to remain decentralized, new approaches are needed.
+In centralized networks, these issues are resolved by a central authority in the system (i.e. the company that runs it). To solve the issue without the need of a centralized server, new approaches are needed.
 
 ### Web of Trust (WoT)
 
-Web of Trust is a concept that attempts to address some of the above issues without introducing centralization, by having a web of people trusted by the user to collectively decide what to show/recommend, and what to hide/block. The analogy is that "If many friends recommends something, it is more likely a good thing. Conversely, if many friends recommend against something, it is better to block it".
+Web of Trust is a concept that attempts to address some of the above issues without introducing a centralized server, by having a web of people trusted by the user to collectively decide what to show/recommend, and what to hide/block. The analogy is that "If many trusted friends recommends something, it is more likely a good thing. Conversely, if many friends recommend against something, it is better to block it".
 
 It is currently one of the most promising algorithms to tackle these problems.
 
 ## What is this repository
 
-This repository will hold some data-driven studies on algorithms that aim to help improve discoverability, usability, safety, controllability and spam detection, including WoT algorithms. The goal is to better understand the effects of these, and the dynamics of the network as a whole.
+This repository will hold some data-driven studies on algorithms that aim to help improve discoverability, usability, safety, user choice, and spam detection. The goal is to better understand the effects of these, and the dynamics of the network as a whole.
 
